@@ -33,12 +33,8 @@ class GeminiUtils:
         # MODELOS ACTUALIZADOS DICIEMBRE 2024
         # Basado en: https://ai.google.dev/gemini-api/docs/models/gemini
         self.models_priority = [
-            "gemini-2.0-flash",           # GA - Rápido y potente (RECOMENDADO)
-            "gemini-1.5-flash-002",       # Estable - Balanceado
-            "gemini-1.5-pro-002",         # Estable - Mejor razonamiento
-            "gemini-2.0-flash-exp",       # Experimental (puede dar 429)
-            "gemini-1.5-flash-latest",    # Alias a última versión flash
-            "gemini-1.5-pro-latest",      # Alias a última versión pro
+            "gemini-flash-latest",      # Alias oficial de Google: siempre apunta al Flash vigente
+            "gemini-flash-lite-latest", # Alias oficial: Flash-Lite vigente (fallback)
         ]
         self._init_best_model()
 
